@@ -48,7 +48,7 @@ concesionario.add_car(car1)
 concesionario.add_car(car2)         
 
 concesionario.register_user(user1)
-car1.available = True
+
 user1.buy_car(car1)
 
 
