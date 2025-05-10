@@ -4,13 +4,13 @@ import  csv
 #leer datos de venta mensuales
 monthly_sales = {}
 with open('monthly_sales.csv', mode='r') as file:
- reader = csv.DictReader(file)
-for row in reader:
+    reader = csv.DictReader(file)
+    for row in reader:
         month = row['month']
         sales = int(row['sales'])
         monthly_sales[month] = sales
 
-sales =  list(monthly_sales.values())
+    sales =  list(monthly_sales.values())
 print(sales)
 
 #hallar la media
