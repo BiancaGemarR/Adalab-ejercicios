@@ -1,8 +1,9 @@
 class Clientes:
-    def __init__(self, name, surname, num_reserva):
+    def __init__(self, name, surname, num_reserva, cantidad):
         self.name = name
         self.surname = surname
         self.num_reserva = num_reserva
+        self.cantidad = cantidad
 
 class Managementclientes:
     def __init__(self):
@@ -28,6 +29,6 @@ class Managementclientes:
   
 
 lista_clientes = Managementclientes()    
-cliente_1 = Clientes('Laura', 'ramos', 1)
+cliente_1 = Clientes('Laura', 'ramos', 1, 349)
 lista_clientes.add_cliente(cliente_1)
 lista_clientes.get_cliente(2)
